@@ -18,6 +18,7 @@ psql -f /db.backup
 # npm install
 # npm run cli # Db is generated
 git checkout dev
+git pull
 npm install
 npm run sequelize:migrations # Db is migrated
 

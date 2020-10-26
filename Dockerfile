@@ -10,7 +10,9 @@ RUN apk add postgresql-client
 
 RUN apk add bash
 
-RUN git clone https://github.com/rederly/backend.git
+RUN git clone --branch dev https://github.com/rederly/backend.git
+WORKDIR "/backend"
+RUN npm install
 
 RUN mkdir liquibase
 WORKDIR "/liquibase"

@@ -7,4 +7,4 @@
         -e DB_PASSWORD=" " \
         temp; \
     sudo docker rm `sudo docker ps -aq`
-) | tee output.txt
+) | tee output.log
